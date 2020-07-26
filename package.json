@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Contact manager app",
   "main": "server.js",
+  "homepage": "http://Anam0609.github.io/contact-keeper",
   "scripts": {
     "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build":"react-scripts build",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "clientinstall": "npm install --prefix client",
